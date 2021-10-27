@@ -28,7 +28,7 @@ body {
 
 .content {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .centered_text {
@@ -82,7 +82,7 @@ a:focus {
   height: 115px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 768px) {
   .step_container {
     margin-bottom: 20px;
   }
