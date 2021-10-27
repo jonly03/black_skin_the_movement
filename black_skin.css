@@ -1,14 +1,85 @@
+html,
 body {
-  background-color: black;
+  width: 100vw;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.qrcode {
-  height: 100%;
+.header {
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: url("./black_skin_header.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.centered_text {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.redish {
+  color: #821d2d;
+}
+.qrcode_container {
+  margin-top: 30px;
+}
+.join_heading_container {
+  margin-bottom: 30px;
+}
+
+.qrcode_download_container,
+.steps_2_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover,
+a:focus {
+  color: #821d2d;
+}
+
+.step_2_3_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps_2_3_img {
+  height: 115px;
+}
+
+@media screen and (max-width: 750px) {
+  .step_container {
+    margin-bottom: 20px;
+  }
 }
